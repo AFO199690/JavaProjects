@@ -1,0 +1,43 @@
+
+public class SumOfArray{
+
+public static void main(String[]args{
+		static void int sum(int[] arr,int start,int end)
+		{
+			if(arr.length==0)
+				throw new IllegalArgumentException();
+			if(arr.length==null)
+				throw new NullArgumentException();
+			if(start<0||end>=arr.length|| start>end)
+				throw new ArrayIndesOutOfBoundsException();
+			for(int i=start;i<=end;i++);
+			{
+			sum=arr[i];
+			
+			}
+		}catch(IllegalArgumentException ie)		
+		{
+			System.out.println(ie);
+		}
+		catch(NullPointerException ne)	
+		{
+			System.out.println(ne);
+		}
+		catch(ArrayIndesOutOfBoundsException ae)	
+		{
+			System.out.println("Enter valid values of start and end");
+		}
+		catch(Exception e)	
+		{
+			System.out.println("Sum Should not be 0");
+		}
+         return sum;
+	}
+	public static void main(String...args)
+	{
+		int[]a= {2,5,4,8,6,9}
+		int res=sum(a,3,5)
+				System.out.println("Sum -"+res);
+	}
+
+}
