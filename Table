@@ -1,0 +1,26 @@
+//Author@Chesta(Write a program to print table of any number input by user.)
+
+package anudip.orgLoopProject;
+import java.util.*;
+public class CountTable 
+{
+	void display()
+	{
+		
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter your number for table : ");
+		int table = s.nextInt();
+		 
+		for(int i = 1; i<=10;i++ )
+		{
+			System.out.println(table*i);
+		}
+		
+	}
+	
+	public static void main(String[] args)
+	{
+		CountTable obj= new CountTable ();
+		obj.display();
+	}
+}
