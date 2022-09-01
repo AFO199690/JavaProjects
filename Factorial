@@ -1,18 +1,41 @@
 
 //Author @ Chesta(Write a Java program to find a factorial of a number input by user)
-public class Factorial{
-public static void main(String[]args){
-int i ="yes";
-int i,fact=1;
-int num=5;
-for(i=1;i<num;i++){
-fact=fact*i;
+public class Factorial 
+{
+	 private static Factorial obj;
+
+	void Factorial(int n) 
+	 {
+		int fact=1;
+		Scanner sc=new Scanner(System.in);
+		String y ="yes";
+		String n1 ="no";
+		System.out.println("Enter number find factorial");
+		n = sc.nextInt();
+
+
+		int  i=1;
+		do
+		{
+
+			if (i<=n);
+			{
+				fact=fact*i;
+				i++;
+			System.out.println("factorial is :"+fact);
+			}
+			System.out.println(" Do you want to Continue (yes/no) ");
+			y = sc.next().toLowerCase();
+		}
+	while (y.equals("yes")); 
+	} 
+
+	public static void main(String[] args) 
+	{	
+		Factorial.obj = new Factorial();
+				obj.Factorial(0);
+	}	
 }
-System.out.println("factorial of"+number+"is:"+fact);
-}
-}
-System.out.println("do you want to continue(yes/no):");
-i=sc.next().toLowerCase();
 
 
 
