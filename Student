@@ -1,0 +1,21 @@
+//Author @ chesta ( WAP to create a HashMap and add 5 student's id(101,102,103,104,105) as key and name as value.)
+   (Print the name of students whose id is greater than 103. )
+
+package collection;
+import java.util.*;
+public class student {
+	public static void main (String args []) {
+		HashMap<Integer,String>
+		map =new HashMap<Integer,String>(); // creating hashmap
+		map.put(101,"chesta");
+		map.put(102,"suman");
+		map.put(103,"khushal");
+		map.put(104,"jatin");
+		map.put(105,"aavya");
+		System.out.print("iterating hashmap");
+		for(Map.Entry m:map.entrySet())){
+			System.out.println(m.getKey()+" "+m.getValue());
+		}
+	}
+
+}
