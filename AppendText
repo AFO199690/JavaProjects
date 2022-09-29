@@ -1,0 +1,26 @@
+//Author @ chesta(write a java program to append text to an existing file..)
+package javaio;
+
+import java.io.*;
+
+public class AppendText
+{
+	//main starts
+   public static void main(String[] args)
+   {
+      try
+      {
+    	  //filewriter class for writing a file
+         FileWriter fw = new FileWriter("C:\\Students.txt", true);
+         //appending text
+         fw.write("\nthis is chesta project.");
+         //closing the file
+         fw.close();
+         System.out.println("The data is successfully appended to the file.");
+      }
+      catch(IOException ioe)
+      {
+         System.out.print("\nSomething went wrong!");
+      }
+   }
+}
